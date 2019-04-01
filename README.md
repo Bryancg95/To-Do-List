@@ -1,6 +1,6 @@
 # To Do List
 
-One Paragraph of project description goes here
+It is an application for task control
 
 ### Prerequisites
 
