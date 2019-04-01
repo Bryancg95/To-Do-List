@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  width: 65%;
+}
+.container .title {
+  margin: 5px auto;
+}
+
+.button-add {
+  background: none;
+  border: 2px solid #2E9AFE;
+  border-radius: 2px;
+  color: #2E9AFE;
+  margin: 0px 7px;
+  padding: 6px 16px;
+  text-decoration: none;
+}
+.button-add:disabled {
+  cursor: no-drop;
+  opacity: 0.5;
+}
+.button-add:hover {
+  color: #FFF;
+  background: #2E9AFE;
+}
+
+.button-save {
+  background: none;
+  border: 2px solid #74DF00;
+  border-radius: 2px;
+  color: #74DF00;
+  margin: 0px 7px;
+  padding: 6px 16px;
+  text-decoration: none;
+}
+.button-save:disabled {
+  cursor: no-drop;
+  opacity: 0.5;
+}
+.button-save:hover {
+  color: #FFF;
+  background: #74DF00;
+}
+
+.container-tasks {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.container-tasks .container-task {
+  align-items: end;
+  background-color: rgba(172, 88, 250, 0.9);
+  border-radius: 2px;
+  box-shadow: 2px 1px 10px 1px rgba(119, 119, 119, 0.7);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 7px;
+  min-width: 45%;
+  padding: 20px 10px;
+}
+.container-tasks .container-task .button-remove {
+  background: none;
+  border: 2px solid #FFF;
+  border-radius: 100%;
+  color: #FFF;
+  opacity: 0.5;
+  padding: 0px 7px 4px 7px;
+  text-align: center;
+  text-decoration: none;
+}
+.container-tasks .container-task .button-remove:hover {
+  border: 2px solid #DF013A;
+  color: #DF013A;
+  opacity: 0.9;
+}
+.container-tasks .container-task .text-task {
+  background: rgba(255, 255, 255, 0);
+  border: 0;
+  border-bottom: 2px solid #EFF2FB;
+  color: #EFF2FB;
+  margin: 1px 5px;
+  outline: none;
+  padding: 3px;
+  width: 94%;
+}
+.container-tasks .container-task .text-task:focus {
+  border-bottom: 2px solid #3559D1;
+}
+.container-tasks .container-task .text-task:disabled {
+  border: 0;
+}
+.container-tasks .container-task .check-task {
+  display: none;
+}
+.container-tasks .container-task .draw-check {
+  border: 2px solid #FAFAFA;
+  border-radius: 2px;
+  padding: 9px;
+}
+.container-tasks .container-task input[type=checkbox] + .draw-check .draw-check-color {
+  display: none;
+}
+.container-tasks .container-task input[type=checkbox]:checked + .draw-check {
+  border: 2px solid #3ADF00;
+  border-radius: 2px;
+  padding: 0px 3px;
+}
+.container-tasks .container-task input[type=checkbox]:checked + .draw-check .draw-check-color {
+  color: #3ADF00;
+  display: inline;
+  padding: 0px 2px;
+}
+
+.container-options {
+  background: #E6E6E6;
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+  padding: 8px 0px;
+}
+.container-options .text-add {
+  border: 0;
+  border-bottom: 2px solid #BDBDBD;
+  background: rgba(255, 255, 255, 0);
+  color: #6E6E6E;
+  outline: none;
+  padding: 6px 3px;
+  width: 33%;
+}
+.container-options .text-add:focus {
+  border-bottom: 2px solid #8181F7;
+}
+
+/*# sourceMappingURL=main.css.map */

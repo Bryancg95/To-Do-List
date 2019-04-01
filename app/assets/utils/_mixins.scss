@@ -1,0 +1,39 @@
+@mixin button ($colorButton) {
+    background: none;
+    border: 2px solid $colorButton;
+    border-radius: 2px;
+    color: $colorButton;
+    margin: 0px 7px;
+    padding: 6px 16px;
+    text-decoration: none;
+        
+
+    &:disabled {
+        cursor: no-drop;
+        opacity: .5;
+    }
+
+    &:hover {
+        color: $color-white;
+        background: $colorButton;
+    }
+
+}
+
+
+@mixin button-remove {
+    background: none;
+    border: 2px solid $color-white;
+    border-radius: 100%;
+    color: $color-white;
+    opacity: 0.5;
+    padding: 0px 7px 4px 7px;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+        border: 2px solid $color-crimson;
+        color: $color-crimson;
+        opacity: 0.9;
+    }
+}

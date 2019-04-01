@@ -1,0 +1,98 @@
+
+ .container-tasks {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    width: 100%;
+    
+
+    .container-task {
+        align-items: end;
+        background-color: rgba($color-blueViolet , 0.9); 
+        border-radius: 2px;
+        box-shadow: 2px 1px 10px 1px rgba(119, 119, 119, 0.7);
+        display: flex;
+        flex-direction: row;  
+        justify-content: space-around;
+        margin: 7px;
+        min-width: 45%;
+        padding: 20px 10px;
+
+
+        .button-remove {
+            @include button-remove;
+        }
+
+        .text-task {
+            background: rgba($color-white, 0);
+            border: 0;
+            border-bottom: 2px solid $color-ampo;
+            color: $color-ampo;
+            margin: 1px 5px;
+            outline: none;
+            padding: 3px;
+            width: 94%;
+
+            &:focus {
+                border-bottom:  2px solid $color-royalBlue;
+            }
+
+            &:disabled {
+                border: 0;
+            }
+        }
+
+        .check-task {
+            display: none;
+        }
+
+        .draw-check {
+            border: 2px solid $color-alabastro;
+            border-radius: 2px;
+            padding: 9px;
+        }
+
+        input[type="checkbox"] + .draw-check .draw-check-color {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked + .draw-check {
+            border: 2px solid $color-chartreuse;
+            border-radius: 2px;
+            padding: 0px 3px ;
+        }
+
+        input[type="checkbox"]:checked + .draw-check .draw-check-color {
+            color: $color-chartreuse;
+            display: inline;
+            padding: 0px 2px;
+        }
+
+    }
+
+    
+   
+ }
+
+ .container-options {
+    background: $color-white-low;
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    padding: 8px 0px;
+
+    .text-add {
+        border: 0;
+        border-bottom: 2px solid $color-gainsboro;
+        background: rgba($color-white, 0);
+        color: #6E6E6E;
+        outline: none;
+        padding: 6px 3px;
+        width: 33%;
+        &:focus {
+            border-bottom: 2px solid $color-mediumSlateBlue;
+        }
+    }
+}
+

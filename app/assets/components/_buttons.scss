@@ -1,0 +1,7 @@
+.button-add {
+    @include button($color-deepSkyBlue);
+}
+
+.button-save {
+    @include button($color-lime);
+}
